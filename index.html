@@ -112,10 +112,12 @@ layout: true
 ---
 ### Land & Sea Rover details
 
+<style>.image0{width:auto;height:auto;min-width: 0%;max-width: 100%}</style>
 <style>.image10{width:10%;height:auto;}</style>
 <style>.image20{width:20%;height:auto;}</style>
 <style>.image30{width:30%;height:auto;}</style>
 <style>.image40{width:40%;height:auto;}</style>
+<style>.image45{width:45%;height:auto;}</style>
 <style>.image50{width:50%;height:auto;}</style>
 <style>.image60{width:60%;height:auto;}</style>
 <style>.image70{width:70%;height:auto;}</style>
@@ -124,6 +126,7 @@ layout: true
 <style>.image100{width:100%;height:auto;}</style>
 <style>.image150{width:150%;height:auto;}</style>
 <style>.small_text{font-size: 12px; }</style>
+<style>.tiny_text{font-size: 10px;  line-height: 1; }</style>
 <table width="100%">
     <tr>
         <td align="center">
@@ -807,7 +810,42 @@ I'm sorry, there should be more, but I got distracted by other fun stuff:<br>
 <font class="small_text">
 I'm sorry, there should be more, but I got distracted by other fun stuff:<br>
 </font>
-[Plot.ly](20180805_athena_query_chart_masked.html)
+Plotly 3D charts of the AWS Athena PrestoDB product
+<a target="_blank" href="20180805_athena_query_chart_masked.html"><img title="(click for more)"  src="images/Plotly_3D_Athena.png" class="image100"></a>
+---
+<font class="small_text">
+I'm sorry, there should be more, but I got distracted by other fun stuff:<br></font>
+<p class="tiny_text">
+<font class="tiny_text">
+A year or so before the recent fantastic JupyterLab git plugins were available, I combined existing classic Jupyter
+git plugins along with my own: <b>Resync Git Subtree,</b> <b>Update Git Subtree</b>, and <b>REVERT FILE to Git</b> allow full or partial updates of a user's personal git working tree, which is configured to be at
+the beginning of the user's PYTHONPATH, allowing users to selectively override shared code with their own test code, before checking in changes to the shared code. <b>DIFF two notebooks</b> invokes <b>nbdiff</b> on 
+two arbitrary notebooks that were selected with checkmarks in the Jupyter file tree.<br>
+<br><img src="images/git_maintain_jupyter_plugin.png" class="image100">
+
+<br><br>A 3rd <b>history</b> button was added to the standard <b>nbdime</b> buttons in the Jupyter notebook toolbar...<br>
+<img src="images/nbdiff_plugin_modifications.png" class="image0" width="332" height="118">
+
+...which leads to the simple gitweb GUI that comes with git:<br><br>
+<img src="images/checkin_history.png" class="image90">
+</font></p>
+
+---
+<font class="small_text">
+I'm sorry, there should be more, but I got distracted by other fun stuff:<br>
+</font>
+IPyWidgets for N*N-way diffs between SQL schemas or AWS IAM policies across multiple sub-accounts:
+<font class="small_text"><br>Using Python difflib edit distance (similar to Levenshtein distance) to color the icons on a ramp from 0.0 = green to 1.0 = red<br><br>
+Clicking on a colored icon populates the diff display below the interactive 3D chart.</font><br>
+<br><br><a target="_blank" href="images/screenshot_of_ddl_diff_3d_heatmap.png"><img title="(click for more)" src="images/screenshot_of_ddl_diff_3d_heatmap.png" class="image45"></a>
+<a target="_blank" href="images/screenshot_of_iam_policy_diff_3d_heatmap.png"><img title="(click for more)" src="images/screenshot_of_iam_policy_diff_3d_heatmap.png" class="image45"></a>
+---
+<font class="small_text">
+I'm sorry, there should be more, but I got distracted by other fun stuff:<br>
+</font>
+Running ETL through Jupyter notebooks in batch mode on AWS spot instances under Airflow:
+<font class="small_text"><br>Using the Papermill library with a custom engine to only execute cells with the tag <b>"batch"</b>, each notebook gets executed as an Airflow <b>Task</b> on its own AWS EC2 spot instance.</font><br><br>
+<br><br><a target="_blank" href="Background_info_for_ascii_processing_using_sql.html"><img title="(click for more)" src="Background_info_for_ascii_processing_using_sql.d/our_jupyter_airflow_screenshot1.png" class="image90"></a>
 
 
 		</textarea>
